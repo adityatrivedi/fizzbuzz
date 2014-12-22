@@ -35,6 +35,5 @@ class ViewController: UIViewController {
       println("Flat")
     }
   } // computeResult
-
-}
-
+  
+} //ViewController
