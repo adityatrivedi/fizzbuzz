@@ -28,8 +28,8 @@ class ViewController: UIViewController {
   
   @IBAction func computeButtonPressed(sender: AnyObject) {
     
-    // TODO: handle invalid input
-    let inputNum:Int? = inputTextField.text.toInt()!
+    // handle invalid input
+    let inputNum:Int? = inputTextField.text.toInt()
     
     if (inputNum != nil) {
         outputTextField.text = computeResult(inputNum!)
