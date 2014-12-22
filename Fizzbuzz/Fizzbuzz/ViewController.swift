@@ -9,17 +9,31 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  
+  // MARK: View Controller Lifecycle
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
   }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
-
-}
-
+  
+  
+  // MARK: Button Handlers
+  
+  
+  
+  // MARK: Data Processor
+  
+  func computeResult(num:Int) {
+    
+    if (num%3 == 0) && (num%5 == 0) {
+      println("FizzBuzz")
+    } else if (num%3 == 0) {
+      println("Fizz")
+    } else if (num%5 == 0) {
+      println("Buzz")
+    } else {
+      println("Flat")
+    }
+  } // computeResult
+  
+} //ViewController
