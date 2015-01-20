@@ -1,0 +1,4 @@
+language: objective-c
+xcode_project: Fizzbuzz/Fizzbuzz.xcodeproj
+xcode_scheme: FizzbuzzTests
+xcode_sdk: iphonesimulator
