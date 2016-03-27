@@ -29,10 +29,10 @@ class ViewController: UIViewController {
   @IBAction func computeButtonPressed(sender: AnyObject) {
     
     // handle invalid input
-    let inputNum:Int? = inputTextField.text.toInt()
+    let inputNum:Int? = Int(inputTextField.text!)
     
     if (inputNum != nil) {
-        outputTextField.text = computeResult(inputNum!)
+        outputTextField.text = computeResult(inputNum!) as String
     } else {
         outputTextField.text = "Invalid Input"
     }
