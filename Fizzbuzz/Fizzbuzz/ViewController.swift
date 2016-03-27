@@ -9,41 +9,41 @@
 import UIKit
 
 class ViewController: UIViewController {
-  
+
   // MARK: UI
-  
+
   @IBOutlet weak var inputTextField: UITextField!
   @IBOutlet weak var computeButton: UIButton!
   @IBOutlet weak var outputTextField: UITextField!
-  
-  
+
+
   // MARK: View Controller Lifecycle
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
   } // viewDidLoad
-  
-  
+
+
   // MARK: Button Handlers
-  
+
   @IBAction func computeButtonPressed(sender: AnyObject) {
-    
+
     // handle invalid input
-    let inputNum:Int? = Int(inputTextField.text!)
-    
+    let inputNum: Int? = Int(inputTextField.text!)
+
     if (inputNum != nil) {
         outputTextField.text = computeResult(inputNum!) as String
     } else {
         outputTextField.text = "Invalid Input"
     }
-    
+
   } // computeButtonPressed
-  
-  
+
+
   // MARK: Data Processor
-  
+
   func computeResult(num:Int) -> NSString {
-    
+
     if (num%3 == 0) && (num%5 == 0) {
       return "FizzBuzz"
     } else if (num%3 == 0) {
@@ -54,5 +54,5 @@ class ViewController: UIViewController {
       return "Flat"
     }
   } // computeResult
-  
-} //ViewController
+
+} // ViewController
