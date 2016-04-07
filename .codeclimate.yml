@@ -3,5 +3,6 @@ engines:
   tailor:
     enabled: true
 ratings:
-  paths: []
+  paths:
+  - "**.swift"
 exclude_paths: []
