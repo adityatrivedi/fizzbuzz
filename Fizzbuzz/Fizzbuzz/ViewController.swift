@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-  } // viewDidLoad
+  }
 
 
   // MARK: Button Handlers
@@ -31,28 +31,28 @@ class ViewController: UIViewController {
     // handle invalid input
     let inputNum: Int? = Int(inputTextField.text!)
 
-    if (inputNum != nil) {
+    if inputNum != nil {
         outputTextField.text = computeResult(inputNum!) as String
     } else {
         outputTextField.text = "Invalid Input"
     }
 
-  } // computeButtonPressed
+  }
 
 
   // MARK: Data Processor
 
-  func computeResult(num:Int) -> NSString {
+  func computeResult(num: Int) -> NSString {
 
     if (num%3 == 0) && (num%5 == 0) {
       return "FizzBuzz"
-    } else if (num%3 == 0) {
+    } else if num%3 == 0 {
       return "Fizz"
-    } else if (num%5 == 0) {
+    } else if num%5 == 0 {
       return "Buzz"
     } else {
       return "Flat"
     }
-  } // computeResult
+  }
 
-} // ViewController
+}
